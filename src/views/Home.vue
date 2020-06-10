@@ -1,7 +1,7 @@
 <template>
   <div class="home container-fluid">
     <div class="row">
-      <div class="col-12 m-3 text-light">
+      <div class="col-12 text-light">
         <h1>Welcome to the coding shop!</h1>
       </div>
     </div>
