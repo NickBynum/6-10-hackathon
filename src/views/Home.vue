@@ -31,6 +31,7 @@
         <button class="btn btn-lg btn-outline-dark m-2 text-light m-2" @click="addStaff('jrDev')">Hire a Jr Dev</button>
         <button class="btn btn-lg btn-outline-dark m-2 text-light m-2" @click="addStaff('srDev')">Hire a Sr Dev</button>
         <button class="btn btn-lg btn-outline-dark m-2 text-light m-2" @click="addStaff('salesman')">Hire a Salesman</button>
+                <button class="btn btn-lg btn-outline-dark m-2 text-light m-2" @click="addStaff('qaTeam')">Hire Quality Tech</button>
       </div>
     </div>
     <div class="row mt-5 justify-content-around">
