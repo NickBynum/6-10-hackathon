@@ -9,15 +9,15 @@
       <div class="col-4 d-flex flex-column align-self-center">
         <button
           class="btn btn-lg btn-outline-dark m-2 text-light"
-          @click="writeLine()"
+          @click="writeCode(1)"
         >Write Line of Code</button>
         <button
           class="btn btn-lg btn-outline-dark m-2 text-light"
-          @click="addLibrary()"
+          @click="writeCode(100)"
         >Add a Library</button>
         <button
           class="btn btn-lg btn-outline-dark m-2 text-light"
-          @click="addFramework()"
+          @click="writeCode(1000)"
         >Add a Framework</button>
       </div>
       <div class="col-4">
@@ -62,14 +62,8 @@ export default {
   },
   computed: {},
   methods: {
-    writeLine() {
-      this.$store.dispatch("writeLine")
-    },
-    addLibrary() {
-      this.$store.dispatch("addLibrary")
-    },
-    addFramework() {
-      this.$store.dispatch("addFramework")
+    writeCode(res) {
+      this.$store.dispatch("writeCode", res)
     },
     addStaff(staffChoice) {
       this.$store.dispatch("addStaff", staffChoice)

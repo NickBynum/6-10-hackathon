@@ -47,14 +47,8 @@ export default new Vuex.Store({
   mutations: {
   },
   actions: {
-    writeLine({commit, dispatch}) {
-      this.state.codeBase.lines++
-    },
-    addLibrary({commit, dispatch}) {
-      this.state.codeBase.lines += 100
-    },
-    addFramework({commit, dispatch}) {
-      this.state.codeBase.lines += 1000
+    writeCode({commit, dispatch}, res) {
+      this.state.codeBase.lines += res
     },
     addStaff({commit, dispatch}, res) {
       this.state.team[res].quantity += 1      
