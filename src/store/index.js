@@ -55,6 +55,9 @@ export default new Vuex.Store({
     },
     addFramework({commit, dispatch}) {
       this.state.codeBase.lines += 1000
+    },
+    addStaff({commit, dispatch}, res) {
+      this.state.team[res].quantity += 1      
     }
   },
   modules: {
