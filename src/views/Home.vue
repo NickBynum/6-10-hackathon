@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-4 d-flex flex-column align-self-center">
+      <div class="col-12 col-md-4 d-flex flex-column align-self-center">
         <button
           class="btn btn-lg btn-outline-dark m-2 text-light"
           @click="writeCode(1)"
@@ -20,13 +20,13 @@
           @click="writeCode(1000)"
         >Add a Framework</button>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-md-4">
         <img
           class="img-fluid rounded-circle"
           src="https://miro.medium.com/max/1187/1*0FqDC0_r1f5xFz3IywLYRA.jpeg"
         />
       </div>
-      <div class="col-4 d-flex flex-column align-self-center">
+      <div class="col-12 col-md-4 d-flex flex-column align-self-center">
         <button class="btn btn-lg btn-outline-dark m-2 text-light m-2" @click="addStaff('apprentice')">Hire an Apprentice</button>
         <button class="btn btn-lg btn-outline-dark m-2 text-light m-2" @click="addStaff('jrDev')">Hire a Jr Dev</button>
         <button class="btn btn-lg btn-outline-dark m-2 text-light m-2" @click="addStaff('srDev')">Hire a Sr Dev</button>
@@ -35,16 +35,23 @@
       </div>
     </div>
     <div class="row mt-5 justify-content-around">
-      <div class="col-3 border bg-trans">
+      <div class="col-12 col-md-3 border bg-trans">
         <CodeBase></CodeBase>
       </div>
-      <div class="col-3 border bg-trans">
+      <div class="col-12 col-md-3 border bg-trans">
         <Team></Team>
       </div>
-      <div class="col-3 border bg-trans">
+      <div class="col-12 col-md-3 border bg-trans">
         <Wallet></Wallet>
       </div>
     </div>
+        <footer class="container">
+      <div class="row bottom">
+        <div class="col-12 text-center p-md-5">
+          <p class="text-white ">Created with care by - Nick Bynum<br>all rights reserved</p>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
